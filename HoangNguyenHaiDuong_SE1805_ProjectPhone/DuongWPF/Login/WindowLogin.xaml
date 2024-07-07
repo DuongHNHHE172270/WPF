@@ -1,0 +1,35 @@
+﻿<Window x:Class="DuongWPF.Login.WindowLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuongWPF.Login"
+        mc:Ignorable="d"
+        Title="WindowLogin" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#3A8DFF" Offset="0" />
+                <GradientStop Color="#FFFFFF" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+            <Image Source="home.png" Width="50" Height="50" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <Border CornerRadius="10" Background="White" Padding="20">
+                <StackPanel>
+                    <TextBlock Text="USER" FontWeight="Bold" Foreground="Gray"/>
+                    <TextBox x:Name="txtUserName" Margin="0,0,0,20"/>
+                    <TextBlock Text="PASSWORD" FontWeight="Bold" Foreground="Gray"/>
+                    <PasswordBox x:Name="PasswordBox" Margin="0,0,0,20"/>
+                    <Button Content="LOGIN" Background="#3A8DFF" Foreground="White" Padding="10" Margin="0,0,0,10" Click="Button_Click"/>
+
+                    <!-- Changed Register Button to TextBlock -->
+                    <TextBlock Text="REGISTER" Foreground="Gray" TextDecorations="Underline" HorizontalAlignment="Center" Margin="0,10,0,0" Cursor="Hand" MouseLeftButtonUp="Register_Click"/>
+
+                    <TextBlock Text="Forgot password?" Foreground="Gray" TextDecorations="Underline" HorizontalAlignment="Center" Margin="0,10,0,0" Cursor="Hand" MouseLeftButtonUp="ForgotPassword_Click"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>

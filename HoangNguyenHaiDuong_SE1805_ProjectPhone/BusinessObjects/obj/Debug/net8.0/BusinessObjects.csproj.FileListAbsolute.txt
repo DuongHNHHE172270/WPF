@@ -1,0 +1,16 @@
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\BusinessObjects.deps.json
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\BusinessObjects.dll
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\BusinessObjects.pdb
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\DataAccess.dll
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\DataAccess.pdb
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\BusinessObjects.csproj.AssemblyReference.cache
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\BusinessObjects.AssemblyInfoInputs.cache
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\BusinessObjects.AssemblyInfo.cs
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\BusinessObjects.csproj.CoreCompileInputs.cache
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\Business.9F57EB23.Up2Date
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\BusinessObjects.dll
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\refint\BusinessObjects.dll
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\BusinessObjects.pdb
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\ref\BusinessObjects.dll
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\appsettings.json

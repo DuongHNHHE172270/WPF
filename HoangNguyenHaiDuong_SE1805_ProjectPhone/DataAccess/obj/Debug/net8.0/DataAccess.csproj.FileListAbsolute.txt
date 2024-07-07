@@ -1,0 +1,15 @@
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DataAccess\bin\Debug\net8.0\appsettings.json

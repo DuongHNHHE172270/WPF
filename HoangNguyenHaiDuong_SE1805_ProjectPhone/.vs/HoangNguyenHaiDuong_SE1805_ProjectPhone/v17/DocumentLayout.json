@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC18A0C1-65FD-4608-B2C3-47BE19FB1D51}|DataAccess\\DataAccess.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\dataaccess\\dal\\logindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC18A0C1-65FD-4608-B2C3-47BE19FB1D51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dal\\logindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\login\\windowchangepassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\login\\windowchangepassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\login\\windowchangepassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\login\\windowchangepassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\login\\windowlogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\login\\windowlogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C722CF1-8E7D-4C47-9327-0AB1280B8822}|BusinessObjects\\BusinessObjects.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\businessobjects\\loginobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C722CF1-8E7D-4C47-9327-0AB1280B8822}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\loginobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginObject.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\BusinessObjects\\LoginObject.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\LoginObject.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\BusinessObjects\\LoginObject.cs",
+              "RelativeToolTip": "BusinessObjects\\LoginObject.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwCUAAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:18:24.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WindowLogin.xaml",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowLogin.xaml",
+              "RelativeDocumentMoniker": "DuongWPF\\Login\\WindowLogin.xaml",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowLogin.xaml",
+              "RelativeToolTip": "DuongWPF\\Login\\WindowLogin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-07T14:47:57.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WindowChangePassword.xaml.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowChangePassword.xaml.cs",
+              "RelativeDocumentMoniker": "DuongWPF\\Login\\WindowChangePassword.xaml.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowChangePassword.xaml.cs",
+              "RelativeToolTip": "DuongWPF\\Login\\WindowChangePassword.xaml.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAIwBsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:47:55.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WindowChangePassword.xaml",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowChangePassword.xaml",
+              "RelativeDocumentMoniker": "DuongWPF\\Login\\WindowChangePassword.xaml",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowChangePassword.xaml",
+              "RelativeToolTip": "DuongWPF\\Login\\WindowChangePassword.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-07T14:47:54.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginDao.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DataAccess\\DAL\\LoginDao.cs",
+              "RelativeDocumentMoniker": "DataAccess\\DAL\\LoginDao.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DataAccess\\DAL\\LoginDao.cs",
+              "RelativeToolTip": "DataAccess\\DAL\\LoginDao.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAcwEIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:21:48.755Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
