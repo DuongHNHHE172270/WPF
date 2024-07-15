@@ -18,18 +18,18 @@
             <Image Source="home.png" Width="50" Height="50" HorizontalAlignment="Center" Margin="0,0,0,20"/>
             <Border CornerRadius="10" Background="White" Padding="20">
                 <StackPanel>
-                    <TextBlock Text="Name" FontWeight="Bold" Foreground="Gray"/>
+                    <TextBlock Text="Tên" FontWeight="Bold" Foreground="Gray"/>
                     <TextBox x:Name="txtName" Margin="0,0,0,20"/>
-                    <TextBlock Text="USERNAME" FontWeight="Bold" Foreground="Gray"/>
+                    <TextBlock Text="Tên đăng nhập" FontWeight="Bold" Foreground="Gray"/>
                     <TextBox x:Name="txtUserName" Margin="0,0,0,20"/>
-                    <TextBlock Text="PASSWORD" FontWeight="Bold" Foreground="Gray"/>
+                    <TextBlock Text="Mật khẩu" FontWeight="Bold" Foreground="Gray"/>
                     <PasswordBox x:Name="PasswordBoxA" Margin="0,0,0,20"/>
-                    <TextBlock Text="PASSWORD AGAIN" FontWeight="Bold" Foreground="Gray"/>
+                    <TextBlock Text="Nhập lại mật khẩu" FontWeight="Bold" Foreground="Gray"/>
                     <PasswordBox x:Name="PasswordBox" Margin="0,0,0,20"/>
-                    <Button Content="REGISTER" Background="#3A8DFF" Foreground="White" Padding="10" Margin="0,0,0,10" Click="Register_Click"/>
+                    <Button Content="Đăng kí" Background="#3A8DFF" Foreground="White" Padding="10" Margin="0,0,0,10" Click="Register_Click"/>
 
                     <!-- Changed Register Button to TextBlock -->
-                    <TextBlock Text="Back to login" Foreground="Gray" TextDecorations="Underline" HorizontalAlignment="Center" Margin="0,10,0,0" Cursor="Hand" MouseLeftButtonUp="Login_Click"/>
+                    <TextBlock Text="Trở lại trang đăng nhập" Foreground="Gray" TextDecorations="Underline" HorizontalAlignment="Center" Margin="0,10,0,0" Cursor="Hand" MouseLeftButtonUp="Login_Click"/>
                 </StackPanel>
             </Border>
         </StackPanel>

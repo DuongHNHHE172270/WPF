@@ -1,0 +1,27 @@
+﻿<Window x:Class="DuongWPF.InputInfo.WindowAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuongWPF.InputInfo"
+        mc:Ignorable="d"
+        Title="Thêm Vật Tư" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#3A8DFF" Offset="0" />
+                <GradientStop Color="#FFFFFF" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackPanel>
+            <StackPanel Margin="20">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,20">
+                    <Button Content="Thêm vật tư mới" Background="#3A8DFF" Foreground="White" Padding="10" Margin="0,0,20,0" Click="AddNewObject_Click"/>
+                    <Button Content="Bổ xung vật tư" Background="#3A8DFF" Foreground="White" Padding="10" Margin="0,0,20,0" Click="AddObject_Click"/>
+                    <Button Content="Quay lại" Background="#3A8DFF" Foreground="White" Padding="10" Click="Return_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

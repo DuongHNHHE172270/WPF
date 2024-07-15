@@ -7,6 +7,77 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Customer\WindowAddPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Customer\WindowCustomer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Customer\WindowCusUpdatePopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InputInfo\WindowAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InputInfo\WindowAddInputPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InputInfo\WindowAddNewObj.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InputInfo\WindowInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ObjectP\WindowAddPhonePopupxaml.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ObjectP\WindowObjectPhone.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ObjectP\WindowUpdateObPhone.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OutputObject\WindowAddOuputPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OutputObject\WindowOutput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Suplier\WindowSuplier.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Suplier\WindowSuplierPopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Suplier\WindowUpdatePopup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserManager\WindowUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Customer\WindowAddPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customer\WindowCustomer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Customer\WindowCusUpdatePopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="InputInfo\WindowAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="InputInfo\WindowAddInputPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="InputInfo\WindowAddNewObj.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="InputInfo\WindowInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Login\WindowChangePassword.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -17,6 +88,33 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ObjectP\WindowAddPhonePopupxaml.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ObjectP\WindowObjectPhone.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ObjectP\WindowUpdateObPhone.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OutputObject\WindowAddOuputPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OutputObject\WindowOutput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Suplier\WindowSuplier.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Suplier\WindowSuplierPopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Suplier\WindowUpdatePopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserManager\WindowUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WindowAdmin.xaml">

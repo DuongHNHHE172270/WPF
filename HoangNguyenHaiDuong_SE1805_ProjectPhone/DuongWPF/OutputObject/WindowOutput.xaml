@@ -1,0 +1,52 @@
+﻿<Window x:Class="DuongWPF.OutputObject.WindowOutput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuongWPF.OutputObject"
+        mc:Ignorable="d"
+        Title="Danh sách phiếu xuất" Height="600" Width="1000">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#3A8DFF" Offset="0" />
+                <GradientStop Color="#FFFFFF" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Background="#ECF0F1" CornerRadius="25" BorderBrush="#34495E" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" Height="500">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Search and Action Buttons -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10" Grid.Row="0">
+                    <Label Content="Nhập tên vật tư:" VerticalAlignment="Center"/>
+                    <TextBox Name="SearchTextBox" Width="150" Height="25" Margin="5" />
+                    <Button Content="Tìm kiếm" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnSearch" Click="btnSearch_Click"/>
+                    <Button Content="Tải lại" Width="100" Height="25" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnLoad" Click="btnLoad_Click"/>
+                    <Button Content="Thêm mới" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnAdd" Click="btnAdd_Click"/>
+                    <Button Content="Xuất file excel" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnFile" Click="btnFile_Click"/>
+                    <Button Content="Trở lại" Margin="5" Width="100" Background="#E74C3C" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnReturn" Click="btnReturn_Click"/>
+                </StackPanel>
+
+                <!-- DataGrid -->
+                <DataGrid Name="dgInputInfo" Grid.Row="1" Margin="10" AutoGenerateColumns="False" Background="Transparent" CanUserAddRows="False" ItemsSource="{Binding}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding IdOutputInfo}" IsReadOnly="True" Width="0.5*" />
+                        <DataGridTextColumn Header="Tên vật tư" Binding="{Binding ObjectName}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn Header="Số lượng" Binding="{Binding Count}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn Header="Người nhận" Binding="{Binding CusName}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn Header="Người xuất kho" Binding="{Binding UName}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn Header="Ngày xuất" Binding="{Binding DateOutput}" IsReadOnly="True" Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

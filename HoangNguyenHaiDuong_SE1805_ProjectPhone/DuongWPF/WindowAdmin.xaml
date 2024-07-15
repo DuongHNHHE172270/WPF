@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DuongWPF"
         mc:Ignorable="d"
-        Title="WindowAdmin" Height="450" Width="800">
+        Title="WindowAdmin" Height="500" Width="800">
     <Grid>
-        <TextBox>Amin</TextBox>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#3A8DFF" Offset="0" />
+                <GradientStop Color="#FFFFFF" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackPanel>
+            <!-- Top Bar with Menu -->
+            <Grid Background="#FF6396C9" Height="50">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Button x:Name="BtnNhapKho" Content="Nhập kho" Foreground="White" Background="Transparent" BorderBrush="Transparent" FontWeight="Bold" Padding="10" Click="Input_Click" />
+                    <Button x:Name="BtnXuatKho" Content="Xuất kho" Foreground="White" Background="Transparent" BorderBrush="Transparent" FontWeight="Bold" Padding="10" Click="Output_Click" />
+                    <Button x:Name="BtnVatTu" Content="Vật tư" Foreground="White" Background="Transparent" BorderBrush="Transparent" FontWeight="Bold" Padding="10" Click="Object_Click" />
+                    <Button x:Name="BtnNhaCungCap" Content="Nhà cung cấp" Foreground="White" Background="Transparent" BorderBrush="Transparent" FontWeight="Bold" Padding="10" Click="Supier_Click" />
+                    <Button x:Name="BtnKhachHang" Content="Khách hàng" Foreground="White" Background="Transparent" BorderBrush="Transparent" FontWeight="Bold" Padding="10" Click="Customer_Click" />
+                    <Button x:Name="BtnNguoiDung" Content="Người dùng" Foreground="White" Background="Transparent" BorderBrush="Transparent" FontWeight="Bold" Padding="10" Click="User_Click" />
+                    <Button x:Name="BtnLogout" Content="Đăng xuất" Foreground="White" Background="Transparent" BorderBrush="Transparent" FontWeight="Bold" Padding="10" Click="Logout_Click" />
+                </StackPanel>
+            </Grid>
+
+            <!-- Main Content -->
+            <StackPanel Margin="20">
+                <!-- Search Bar -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,10">
+                    <TextBlock Text="Search" FontWeight="Bold" Foreground="Gray" Margin="0,0,10,0"/>
+                    <ComboBox x:Name="cbObject" Width="200" Background="#ECF0F1" Foreground="#34495E" BorderBrush="#34495E"/>
+                    <Button Content="Load" Background="#3A8DFF" Foreground="White" Padding="10" Margin="20,0,0,0" Click="Load_Click"/>
+                </StackPanel>
+
+                <!-- Summary Boxes -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,20">
+                    <Border x:Name="borderLuongNhap" Background="#00BFFF" CornerRadius="10" Padding="20" Margin="10">
+                        <StackPanel>
+                            <TextBlock Text="Lượng nhập" Foreground="White" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="txtLuongNhap" Foreground="White" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="borderLuongXuat" Background="#00BFFF" CornerRadius="10" Padding="20" Margin="10">
+                        <StackPanel>
+                            <TextBlock Text="Lượng xuất" Foreground="White" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="txtLuongXuat" Foreground="White" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="borderTonKho" Background="#00BFFF" CornerRadius="10" Padding="20" Margin="10">
+                        <StackPanel>
+                            <TextBlock Text="Tồn kho" Foreground="White" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="txtTonKho" Foreground="White" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
