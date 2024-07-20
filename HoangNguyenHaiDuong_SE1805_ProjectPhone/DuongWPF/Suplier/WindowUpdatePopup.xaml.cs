@@ -38,7 +38,6 @@ namespace DuongWPF.Suplier
 			txtAddress.Text = currentSuplier.Address;
 			txtEmail.Text = currentSuplier.Email;
 			txtPhone.Text = currentSuplier.Phone;
-			txtMoreInfo.Text = currentSuplier.MoreInfo;
 
 			if (rbActive.IsChecked == true)
 			{
@@ -57,9 +56,9 @@ namespace DuongWPF.Suplier
 				String address = txtAddress.Text;
 				String phone = txtPhone.Text;
 				String email = txtEmail.Text;
-				String info = txtMoreInfo.Text;
 
-				if (String.IsNullOrWhiteSpace(name) || String.IsNullOrWhiteSpace(address) || String.IsNullOrWhiteSpace(phone) || String.IsNullOrWhiteSpace(email) || String.IsNullOrWhiteSpace(info))
+				if (String.IsNullOrWhiteSpace(name) || String.IsNullOrWhiteSpace(address) || 
+					String.IsNullOrWhiteSpace(phone) || String.IsNullOrWhiteSpace(email))
 				{
 					MessageBox.Show("Hãy nhập hết thông tin!", "Error", MessageBoxButton.OK);
 					Load();
@@ -105,7 +104,6 @@ namespace DuongWPF.Suplier
 				currentSuplier.Address = address;
 				currentSuplier.Email = email;
 				currentSuplier.Phone = phone;
-				currentSuplier.MoreInfo = info;
 				currentSuplier.Status = rbActive.IsChecked == true ? "1" : "0";
 
 				suplierObject.UpdateSuplier(currentSuplier);

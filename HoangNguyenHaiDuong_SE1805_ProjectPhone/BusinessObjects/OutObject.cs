@@ -17,14 +17,9 @@ namespace BusinessObjects
 			outputDao = new OutputDao();
 		}
 
-		public List<OutputInfoViewModel> GetAllOutputs()
+		public void AddOutput(OutputInfo output, string capa)
 		{
-			return outputDao.GetAll();
-		}
-
-		public void AddOutput(OutputInfo output)
-		{
-			if (outputDao.CanExport(output.IdObject, output.Count ?? 0))
+			if (outputDao.CanExport(output.IdObject, output.Count ?? 0, capa))
 			{
 				outputDao.AddOutput(output);
 			}
@@ -33,6 +28,17 @@ namespace BusinessObjects
 				throw new Exception("Số lượng vật tư không đủ để xuất kho.");
 			}
 		}
-		public bool IsOutputIdExists(string idOutputInfo) => outputDao.IsOutputIdExists(idOutputInfo);
+
+		public List<OutputInfoViewModel> GetAllOutputs() => outputDao.GetAll();
+
+		public List<OutputInfoViewModel> GetAllOutputAd() => outputDao.GetAllOut();
+
+		public List<OutputInfoViewModel> GetAllOutputsCus(int cusId) => outputDao.GetAllById(cusId);
+		public OutputInfo GetById(int id) => outputDao.GetOutputById(id);
+
+		public void UpdateOutInfo(OutputInfo output) => outputDao.Update(output);
+
+		public void AddBill(BillHistory billHistory) => outputDao.AddBill(billHistory);
+		
 	}
 }

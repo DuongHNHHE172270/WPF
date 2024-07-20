@@ -5,11 +5,11 @@ namespace DataAccess.Models;
 
 public partial class OutputInfo
 {
-    public string Id { get; set; } = null!;
+    public int Id { get; set; }
 
-    public string IdObject { get; set; } = null!;
+    public int IdObject { get; set; }
 
-    public string IdOutputInfo { get; set; } = null!;
+    public int IdOutput { get; set; }
 
     public int IdCustomer { get; set; }
 
@@ -17,13 +17,17 @@ public partial class OutputInfo
 
     public string? Status { get; set; }
 
-    public int IdUser { get; set; }
+    public int? IdUser { get; set; }
+
+    public string Capacity { get; set; } = null!;
+
+    public virtual ICollection<BillHistory> BillHistories { get; set; } = new List<BillHistory>();
 
     public virtual Customer IdCustomerNavigation { get; set; } = null!;
 
-    public virtual Output IdNavigation { get; set; } = null!;
-
     public virtual Object IdObjectNavigation { get; set; } = null!;
 
-    public virtual User IdUserNavigation { get; set; } = null!;
+    public virtual Output IdOutputNavigation { get; set; } = null!;
+
+    public virtual User? IdUserNavigation { get; set; }
 }

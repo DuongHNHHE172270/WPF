@@ -8,14 +8,14 @@ namespace DataAccess.Models
 {
 	public class InputInfoViewModel
 	{
-		public string Id { get; set; }
+		public int Id { get; set; }
 		public string ObjectName { get; set; }
-		public string InputId { get; set; }
-		public int? Count { get; set; }
+		public string Capacity { get; set; }
+		public int Count { get; set; }
 		public double? InputPrice { get; set; }
-		public double? OutputPrice { get; set; }
 		public string UserName { get; set; }
-		public DateTime? DateInput { get; set; }
 		public string SuplierName { get; set; }
+		public DateTime? DateInput { get; set; }
 	}
+
 }

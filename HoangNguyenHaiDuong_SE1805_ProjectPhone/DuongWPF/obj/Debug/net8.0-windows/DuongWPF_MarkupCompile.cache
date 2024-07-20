@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\DuongWPF\App.xaml
-21-719098256
+27-2113317109
 
-241313513563
-253-521216723
-Customer\WindowAddPopup.xaml;Customer\WindowCustomer.xaml;Customer\WindowCusUpdatePopup.xaml;InputInfo\WindowAdd.xaml;InputInfo\WindowAddInputPopup.xaml;InputInfo\WindowAddNewObj.xaml;InputInfo\WindowInput.xaml;Login\WindowChangePassword.xaml;Login\WindowLogin.xaml;Login\WindowRegister.xaml;MainWindow.xaml;ObjectP\WindowAddPhonePopupxaml.xaml;ObjectP\WindowObjectPhone.xaml;ObjectP\WindowUpdateObPhone.xaml;OutputObject\WindowAddOuputPopup.xaml;OutputObject\WindowOutput.xaml;Suplier\WindowSuplier.xaml;Suplier\WindowSuplierPopup.xaml;Suplier\WindowUpdatePopup.xaml;UserManager\WindowUser.xaml;WindowAdmin.xaml;
+30-843744612
+258-781888434
+Customer\WindowAddOutCustomer.xaml;Customer\WindowAddPopup.xaml;Customer\WindowCustomer.xaml;Customer\WindowCusUpdatePopup.xaml;Customer\WindowHistory.xaml;Customer\WindowHomeCustomer.xaml;InputInfo\WindowAddNewObj.xaml;InputInfo\WindowInput.xaml;Login\WindowChangePassword.xaml;Login\WindowCustomerRegister.xaml;Login\WindowLogin.xaml;Login\WindowRegister.xaml;Login\WindowStaffRegister.xaml;Login\WindowVetifyOTP.xaml;MainWindow.xaml;ObjectP\WindowAddPhonePopupxaml.xaml;ObjectP\WindowObjectPhone.xaml;ObjectP\WindowPhoneDetail.xaml;ObjectP\WindowUpdateObPhone.xaml;OutputObject\WindowAddOuputPopup.xaml;OutputObject\WindowAllOuputInfo.xaml;OutputObject\WindowOutput.xaml;Suplier\WindowSuplier.xaml;Suplier\WindowSuplierPopup.xaml;Suplier\WindowUpdatePopup.xaml;UserManager\WindowUser.xaml;WindowAdmin.xaml;
 
 False
 

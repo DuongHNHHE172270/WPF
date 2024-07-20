@@ -12,13 +12,15 @@ namespace DuongWPF.Customer
 	public partial class WindowCusUpdatePopup : Window
 	{
 		private readonly CustomerObject customerObject;
+		private readonly LoginObject loginObject;
 		private readonly DataAccess.Models.Customer currentCustomer;
 
-		public WindowCusUpdatePopup(DataAccess.Models.Customer customer)
+		public WindowCusUpdatePopup()
 		{
 			InitializeComponent();
 			customerObject = new CustomerObject();
-			currentCustomer = customer;
+			loginObject = new LoginObject();
+			currentCustomer = loginObject.GetCustomer();
 			Load();
 		}
 

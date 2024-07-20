@@ -40,9 +40,9 @@
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True" Width="0.5*" />
                         <DataGridTextColumn Header="Tên vật tư" Binding="{Binding ObjectName}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn Header="Dung lương" Binding="{Binding Capacity}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Số lượng" Binding="{Binding Count}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Giá nhập" Binding="{Binding InputPrice}" IsReadOnly="True" Width="*" />
-                        <DataGridTextColumn Header="Giá xuất" Binding="{Binding OutputPrice}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Người nhập" Binding="{Binding UserName}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Công ty cung cấp" Binding="{Binding SuplierName}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Ngày nhập" Binding="{Binding DateInput}" IsReadOnly="True" Width="*" />

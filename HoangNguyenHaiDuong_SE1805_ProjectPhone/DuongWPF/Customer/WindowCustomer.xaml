@@ -31,7 +31,6 @@
                     <TextBox Name="SearchTextBox" Width="150" Height="25" Margin="5" />
                     <Button Content="Tìm kiếm" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnSearch" Click="btnSearch_Click"/>
                     <Button Content="Tải lại" Width="100" Height="25" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnLoad" Click="btnLoad_Click"/>
-                    <Button Content="Thêm mới" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnAdd" Click="btnAdd_Click"/>
                     <Button Content="Xuất file excel" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnFile" Click="btnFile_Click"/>
                     <Button Content="Trở lại" Margin="5" Width="100" Background="#E74C3C" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnReturn" Click="btnReturn_Click"/>
                 </StackPanel>
@@ -44,12 +43,12 @@
                         <DataGridTextColumn Header="Địa chỉ" Binding="{Binding Address}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Điện thoại" Binding="{Binding Phone}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Email" Binding="{Binding Email}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" IsReadOnly="True" Width="*" />
                         <DataGridTemplateColumn Header="Hành động" Width="1.5*">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
                                         <Button Content="Sửa" Margin="5,0" Width="80" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" Click="btnUpdate_Click"/>
-                                        <Button Content="Xóa" Margin="5,0" Width="80" Background="#E74C3C" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" Click="btnDelete_Click"/>
                                     </StackPanel>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>

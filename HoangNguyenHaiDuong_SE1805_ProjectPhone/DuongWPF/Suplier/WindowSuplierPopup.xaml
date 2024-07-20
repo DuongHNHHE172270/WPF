@@ -48,20 +48,6 @@
                         <Label Content="Email:" Width="150" Foreground="#34495E" VerticalAlignment="Center"/>
                         <TextBox x:Name="txtEmail" Width="200" Background="#ECF0F1" Foreground="#34495E" BorderBrush="#34495E"/>
                     </StackPanel>
-
-                    <StackPanel Orientation="Horizontal" Margin="5">
-                        <Label Content="Thông tin thêm:" Width="150" Foreground="#34495E" VerticalAlignment="Center"/>
-                        <TextBox x:Name="txtMoreInfo" Width="200" Background="#ECF0F1" Foreground="#34495E" BorderBrush="#34495E"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal" Margin="5">
-                        <Label Content="Trạng thái:" Width="150" Foreground="#34495E" VerticalAlignment="Center"/>
-                        <StackPanel Orientation="Horizontal">
-                            <RadioButton x:Name="rbActive" Content="Hoạt động" IsChecked="True" Foreground="#34495E"/>
-                            <RadioButton x:Name="rbInactive" Content="Không hoạt động" Margin="10,0,0,0" Foreground="#34495E"/>
-                        </StackPanel>
-                    </StackPanel>
-
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2" Margin="20,10,0,0">
                         <Button Content="Thêm" Width="100" Height="40" Margin="10,0" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" Click="btnAdd_Click"/>
                         <Button Content="Hủy" Width="100" Height="40" Margin="10,0" Background="#E74C3C" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" Click="btnCancel_Click"/>

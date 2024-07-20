@@ -1,71 +1,100 @@
 ﻿using BusinessObjects;
-using DataAccess.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net;
+using System.Net.Mail;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace DuongWPF.Login
 {
-	/// <summary>
-	/// Interaction logic for WindowChangePassword.xaml
-	/// </summary>
 	public partial class WindowChangePassword : Window
 	{
 		private readonly LoginObject loginObject;
+		private readonly CustomerObject customerObject;
+		private string generatedOtp;
+
 		public WindowChangePassword()
 		{
 			InitializeComponent();
 			loginObject = new LoginObject();
+			customerObject = new CustomerObject();
 		}
 
 		private void ResetForm()
 		{
 			txtUserName.Text = null;
-			PasswordBox.Password = null;
-			PasswordBoxA.Password = null;
 		}
+
+		private string GenerateOtp()
+		{
+			var random = new Random();
+			var otp = random.Next(100000, 999999).ToString();
+			return otp;
+		}
+
 		private void Change_Click(object sender, RoutedEventArgs e)
 		{
-			string username = txtUserName.Text.Trim();
-			string newPassword = PasswordBox.Password.Trim();
-			string newPasswordAgain = PasswordBoxA.Password.Trim();
-
-			if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(newPassword) || string.IsNullOrWhiteSpace(newPasswordAgain))
-			{
-				MessageBox.Show("Please input all fields", "Error", MessageBoxButton.OK);
-				ResetForm();
-				return;
-			}
-
-			if (!newPassword.Equals(newPasswordAgain))
-			{
-				MessageBox.Show("Passwords do not match", "Error", MessageBoxButton.OK);
-				ResetForm();
-				return;
-			}
-
 			try
 			{
-				loginObject.ChangePassword(username, newPassword);
-				MessageBox.Show("Password changed successfully!", "Success", MessageBoxButton.OK);
-				WindowLogin windowLogin = new WindowLogin();
-				windowLogin.Show();
-				this.Close();
+				string username = txtUserName.Text.Trim();
+
+				if (string.IsNullOrWhiteSpace(username))
+				{
+					MessageBox.Show("Please input all fields", "Error", MessageBoxButton.OK);
+					ResetForm();
+					return;
+				}
+
+				var user = loginObject.FindUserByEmail(username);
+				var cus = customerObject.GetCustomerByEmail(username);
+
+				if (user == null && cus == null)
+				{
+					MessageBox.Show("Lỗi! Tài khoản không tồn tại.");
+					return;
+				}
+
+				generatedOtp = GenerateOtp();
+				SendOtpEmail(username, generatedOtp);
+				MessageBox.Show("OTP đã được gửi tới email của bạn.");
+
+				WindowVetifyOTP windowVetifyOTP = new WindowVetifyOTP(generatedOtp, username);
+				windowVetifyOTP.Show();
+				Close();
 			}
 			catch (Exception ex)
 			{
 				MessageBox.Show("Password change failed: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 				ResetForm();
+			}
+		}
+
+		private void SendOtpEmail(string toEmail, string otp)
+		{
+			var fromAddress = new MailAddress("DuongHNHHE172270@fpt.edu.vn", "QuanLyKhoDienThoai");
+			var toAddress = new MailAddress(toEmail);
+			const string fromPassword = "jyor qphe gomb kvgt"; 
+			const string subject = "Your OTP Code";
+			string body = $"Your OTP code is: {otp}";
+
+			var smtp = new SmtpClient
+			{
+				Host = "smtp.gmail.com",
+				Port = 587,
+				EnableSsl = true,
+				DeliveryMethod = SmtpDeliveryMethod.Network,
+				UseDefaultCredentials = false,
+				Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
+			};
+
+			using (var message = new MailMessage(fromAddress, toAddress)
+			{
+				Subject = subject,
+				Body = body
+			})
+			{
+				smtp.Send(message);
 			}
 		}
 

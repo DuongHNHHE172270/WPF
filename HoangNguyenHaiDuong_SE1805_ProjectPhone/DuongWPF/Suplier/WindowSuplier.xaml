@@ -44,7 +44,6 @@
                         <DataGridTextColumn Header="Địa chỉ" Binding="{Binding Address}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Điện thoại" Binding="{Binding Phone}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Email" Binding="{Binding Email}" IsReadOnly="True" Width="*" />
-                        <DataGridTextColumn Header="Thông tin thêm" Binding="{Binding MoreInfo}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" IsReadOnly="True" Width="*" />
                         <DataGridTemplateColumn Header="Hành động" Width="1.5*">
                             <DataGridTemplateColumn.CellTemplate>

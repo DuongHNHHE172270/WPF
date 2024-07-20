@@ -5,7 +5,7 @@ namespace DataAccess.Models;
 
 public partial class Input
 {
-    public string Id { get; set; } = null!;
+    public int Id { get; set; }
 
     public DateTime? DateInput { get; set; }
 

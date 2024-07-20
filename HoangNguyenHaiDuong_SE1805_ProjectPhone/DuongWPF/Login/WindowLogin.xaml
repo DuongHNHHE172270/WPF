@@ -15,10 +15,13 @@
         </Grid.Background>
 
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
-            <Image Source="home.png" Width="50" Height="50" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            
+           
             <Border CornerRadius="10" Background="White" Padding="20">
+                
                 <StackPanel>
-                    <TextBlock Text="Tên đăng nhập" FontWeight="Bold" Foreground="Gray"/>
+                    <Label FontSize="13" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Gray" Content="Đăng nhập"/>
+                    <TextBlock Text="Gmail" FontWeight="Bold" Foreground="Gray"/>
                     <TextBox x:Name="txtUserName" Margin="0,0,0,20"/>
                     <TextBlock Text="Mật khẩu" FontWeight="Bold" Foreground="Gray"/>
                     <PasswordBox x:Name="PasswordBox" Margin="0,0,0,20"/>

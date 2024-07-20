@@ -1,5 +1,6 @@
 ﻿using BusinessObjects;
 using DataAccess.Models;
+using DocumentFormat.OpenXml.Office2010.Excel;
 using DuongWPF.Customer;
 using DuongWPF.InputInfo;
 using DuongWPF.Login;
@@ -40,7 +41,8 @@ namespace DuongWPF
 		private void WindowAdmin_Loaded(object sender, RoutedEventArgs e)
 		{
 			LoadObject();
-			UpdateTotalCounts(); 
+			UpdateTotalCounts();
+			LoadDetail(-1);
 			cbObject.SelectionChanged += CbObject_SelectionChanged;
 		}
 
@@ -51,11 +53,22 @@ namespace DuongWPF
 
 		private void UpdateTotalCounts()
 		{
-			string id = cbObject.SelectedValue as string;
-			txtLuongNhap.Text = objectPhone1.GetTotalInputInfoCount(id).ToString();
-			txtLuongXuat.Text = objectPhone1.GetTotalOutputInfoCount(id).ToString();
-			txtTonKho.Text = objectPhone1.GetTotalInventory(id).ToString();
+			if (cbObject.SelectedValue != null && int.TryParse(cbObject.SelectedValue.ToString(), out int id))
+			{
+				txtLuongNhap.Text = objectPhone1.GetTotalInputInfoCount(id).ToString();
+				txtLuongXuat.Text = objectPhone1.GetTotalOutputInfoCount(id).ToString();
+				txtTonKho.Text = objectPhone1.GetTotalInventory(id).ToString();
+				LoadDetail(id);
+			}
+			else
+			{
+				txtLuongNhap.Text = objectPhone1.GetTotalInputInfoCount(-1).ToString();
+				txtLuongXuat.Text = objectPhone1.GetTotalOutputInfoCount(-1).ToString();
+				txtTonKho.Text = objectPhone1.GetTotalInventory(-1).ToString();
+				LoadDetail(-1);
+			}
 		}
+
 
 		private void Input_Click(object sender, RoutedEventArgs e)
 		{
@@ -107,10 +120,14 @@ namespace DuongWPF
 			cbObject.SelectedValuePath = "Id";
 			cbObject.SelectedIndex = -1; 
 		}
-
+		private void LoadDetail(int id)
+		{
+			dgDetail.ItemsSource = objectPhone1.GetAllObjDetailByObjId(id);
+		}
 		private void Load_Click(object sender, RoutedEventArgs e)
 		{
 			cbObject.SelectedIndex = -1;
+			LoadDetail(-1);
 		}
 
 		private void Logout_Click(object sender, RoutedEventArgs e)

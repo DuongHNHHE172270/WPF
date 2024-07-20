@@ -18,7 +18,6 @@ namespace DuongWPF.ObjectP
 			objectPhone = new ObjectPhone();
 			LoadSupliers();
 		}
-
 		private void LoadSupliers()
 		{
 			var supliers = new SuplierObject().GetAllActiveSupliers();
@@ -29,41 +28,57 @@ namespace DuongWPF.ObjectP
 		{
 			try
 			{
-				string id = txtId.Text.Trim();
 				string name = txtName.Text.Trim();
-				int? idSuplier = (int?)cbSuplier.SelectedValue; 
+				int? idSuplier = (int?)cbSuplier.SelectedValue;
+				string capacity = txtNameDetail.Text.Trim();
 
-				if (string.IsNullOrEmpty(id) || string.IsNullOrEmpty(name) || idSuplier == null)
+				if (string.IsNullOrEmpty(name) || idSuplier == null || string.IsNullOrWhiteSpace(capacity))
 				{
 					MessageBox.Show("Vui lòng nhập đầy đủ thông tin để thêm vật tư.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 					return;
 				}
+				var existingObject = objectPhone.GetAllObject().FirstOrDefault(o => o.DisplayName.ToLower() == name.ToLower() && o.IdSuplier == idSuplier);
 
-				var existingObject = objectPhone.GetAllObject().FirstOrDefault(o => o.Id == id);
 				if (existingObject != null)
 				{
-					MessageBox.Show("Id vật tư đã tồn tại. Vui lòng chọn Id khác.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-					return;
+					var existingDetail = existingObject.ObjectDetails.FirstOrDefault(od => od.Capacity.ToLower() == capacity.ToLower());
+
+					if (existingDetail != null)
+					{
+						MessageBox.Show("Vật tư với tên và dung lượng này đã tồn tại.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+						return;
+					}
+
+					ObjectDetail newObjectDetail = new ObjectDetail
+					{
+						IdObject = existingObject.Id,
+						Capacity = capacity,
+						Count = 0
+					};
+
+					existingObject.ObjectDetails.Add(newObjectDetail);
+					objectPhone.UpdateObject(existingObject);
 				}
-
-				var existingObjectWithNameAndSupplier = objectPhone.GetAllObject().FirstOrDefault(o => o.DisplayName.ToLower() == name.ToLower() && o.IdSuplier == idSuplier);
-				if (existingObjectWithNameAndSupplier != null)
+				else
 				{
-					MessageBox.Show("Vật tư với tên và nhà cung cấp đã tồn tại. Vui lòng kiểm tra lại.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-					return;
+					// Tạo vật tư mới nếu vật tư chưa tồn tại
+					DataAccess.Models.Object newObject = new DataAccess.Models.Object
+					{
+						DisplayName = name,
+						IdSuplier = idSuplier.Value,
+						Status = "1",
+						ObjectDetails = new List<ObjectDetail>
+						{
+							new ObjectDetail
+							{
+								Capacity = capacity,
+								Count = 0
+							}
+						},
+					};
+
+					objectPhone.AddObject(newObject);
 				}
-
-				string status = rbActive.IsChecked == true ? "1" : "0";
-
-				DataAccess.Models.Object newObject = new DataAccess.Models.Object
-				{
-					Id = id,
-					DisplayName = name,
-					IdSuplier = idSuplier.Value,
-					Status = status
-				};
-
-				objectPhone.AddObject(newObject);
 
 				MessageBox.Show("Thêm vật tư thành công!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 				Close();

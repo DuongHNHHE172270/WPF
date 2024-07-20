@@ -117,8 +117,32 @@ namespace DataAccess.DAL
 				throw new Exception($"Error checking existence of customer by email: {ex.Message}");
 			}
 		}
-
+		public Customer GetOutputById(int id)
+		{
+			try
+			{
+				using var context = new QuanLyKhoDienThoaiContext();
+				return context.Customers.FirstOrDefault(o => o.Id == id);
+			}
+			catch (Exception ex)
+			{
+				throw new Exception(ex.Message);
+			}
 		}
 
+		public Customer GetCustByEmail(string email)
+		{
+			try
+			{
+				using var context = new QuanLyKhoDienThoaiContext();
+				return context.Customers.FirstOrDefault(o => o.Email == email);
+			}
+			catch (Exception ex)
+			{
+				throw new Exception(ex.Message);
+			}
+		}
 	}
+
+}
 

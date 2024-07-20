@@ -1,3 +1,4 @@
+D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\appsettings.json
 D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\BusinessObjects.deps.json
 D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\BusinessObjects.dll
 D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\BusinessObjects.pdb
@@ -13,4 +14,3 @@ D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObject
 D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\refint\BusinessObjects.dll
 D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\BusinessObjects.pdb
 D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\obj\Debug\net8.0\ref\BusinessObjects.dll
-D:\Master_plan\C#\Project\HoangNguyenHaiDuong_SE1805_ProjectPhone\BusinessObjects\bin\Debug\net8.0\appsettings.json

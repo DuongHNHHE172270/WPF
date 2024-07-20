@@ -3,48 +3,80 @@
   "WorkspaceRootPath": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\windowadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\windowadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\outputobject\\windowoutput.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\outputobject\\windowoutput.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\customer\\windowaddoutcustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\customer\\windowaddoutcustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\customer\\windowaddpopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\customer\\windowaddpopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\login\\windowchangepassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\login\\windowchangepassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\login\\windowregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\login\\windowregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\login\\windowlogin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\login\\windowlogin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\login\\windowlogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\login\\windowlogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\customer\\windowcustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\customer\\windowcustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\login\\windowcustomerregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\login\\windowcustomerregister.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\outputobject\\windowoutput.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\outputobject\\windowoutput.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\outputobject\\windowallouputinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\outputobject\\windowallouputinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\windowadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\windowadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\outputobject\\windowaddouputpopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\outputobject\\windowaddouputpopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\outputobject\\windowaddouputpopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\outputobject\\windowaddouputpopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\windowadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\windowadmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C722CF1-8E7D-4C47-9327-0AB1280B8822}|BusinessObjects\\BusinessObjects.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\businessobjects\\objectphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C722CF1-8E7D-4C47-9327-0AB1280B8822}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\objectphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC18A0C1-65FD-4608-B2C3-47BE19FB1D51}|DataAccess\\DataAccess.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\dataaccess\\dal\\objectdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC18A0C1-65FD-4608-B2C3-47BE19FB1D51}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dal\\objectdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\inputinfo\\windowadd.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\inputinfo\\windowadd.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\inputinfo\\windowinput.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\inputinfo\\windowinput.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\objectp\\windowaddphonepopupxaml.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\objectp\\windowaddphonepopupxaml.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\inputinfo\\windowaddnewobj.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\inputinfo\\windowaddnewobj.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\inputinfo\\windowaddinputpopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\inputinfo\\windowaddinputpopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\inputinfo\\windowadd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\inputinfo\\windowadd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\inputinfo\\windowaddnewobj.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\inputinfo\\windowaddnewobj.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|d:\\master_plan\\c#\\project\\hoangnguyenhaiduong_se1805_projectphone\\duongwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{72FDEB32-90D9-4DA3-B13F-9664DBC6B60E}|DuongWPF\\DuongWPF.csproj|solutionrelative:duongwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,141 +91,241 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WindowAdmin.xaml.cs",
-              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\WindowAdmin.xaml.cs",
-              "RelativeDocumentMoniker": "DuongWPF\\WindowAdmin.xaml.cs",
-              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\WindowAdmin.xaml.cs",
-              "RelativeToolTip": "DuongWPF\\WindowAdmin.xaml.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAUwHcAAAAQAAAA",
+              "Title": "WindowOutput.xaml.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\OutputObject\\WindowOutput.xaml.cs",
+              "RelativeDocumentMoniker": "DuongWPF\\OutputObject\\WindowOutput.xaml.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\OutputObject\\WindowOutput.xaml.cs",
+              "RelativeToolTip": "DuongWPF\\OutputObject\\WindowOutput.xaml.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAwwG0AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T07:30:15.992Z",
+              "WhenOpened": "2024-07-20T07:02:23.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "WindowAddOutCustomer.xaml.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Customer\\WindowAddOutCustomer.xaml.cs",
+              "RelativeDocumentMoniker": "DuongWPF\\Customer\\WindowAddOutCustomer.xaml.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Customer\\WindowAddOutCustomer.xaml.cs",
+              "RelativeToolTip": "DuongWPF\\Customer\\WindowAddOutCustomer.xaml.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAA9wFgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T07:02:04.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WindowAddPopup.xaml.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Customer\\WindowAddPopup.xaml.cs",
+              "RelativeDocumentMoniker": "DuongWPF\\Customer\\WindowAddPopup.xaml.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Customer\\WindowAddPopup.xaml.cs",
+              "RelativeToolTip": "DuongWPF\\Customer\\WindowAddPopup.xaml.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T07:01:55.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WindowChangePassword.xaml.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowChangePassword.xaml.cs",
+              "RelativeDocumentMoniker": "DuongWPF\\Login\\WindowChangePassword.xaml.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowChangePassword.xaml.cs",
+              "RelativeToolTip": "DuongWPF\\Login\\WindowChangePassword.xaml.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAkwAoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T07:01:34.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WindowRegister.xaml.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowRegister.xaml.cs",
+              "RelativeDocumentMoniker": "DuongWPF\\Login\\WindowRegister.xaml.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowRegister.xaml.cs",
+              "RelativeToolTip": "DuongWPF\\Login\\WindowRegister.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T07:01:29.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WindowCustomerRegister.xaml.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowCustomerRegister.xaml.cs",
+              "RelativeDocumentMoniker": "DuongWPF\\Login\\WindowCustomerRegister.xaml.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowCustomerRegister.xaml.cs",
+              "RelativeToolTip": "DuongWPF\\Login\\WindowCustomerRegister.xaml.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:38:11.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WindowCustomer.xaml",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Customer\\WindowCustomer.xaml",
+              "RelativeDocumentMoniker": "DuongWPF\\Customer\\WindowCustomer.xaml",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Customer\\WindowCustomer.xaml",
+              "RelativeToolTip": "DuongWPF\\Customer\\WindowCustomer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-20T06:26:00.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WindowOutput.xaml",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\OutputObject\\WindowOutput.xaml",
+              "RelativeDocumentMoniker": "DuongWPF\\OutputObject\\WindowOutput.xaml",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\OutputObject\\WindowOutput.xaml",
+              "RelativeToolTip": "DuongWPF\\OutputObject\\WindowOutput.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-20T06:23:55.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WindowAllOuputInfo.xaml",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\OutputObject\\WindowAllOuputInfo.xaml",
+              "RelativeDocumentMoniker": "DuongWPF\\OutputObject\\WindowAllOuputInfo.xaml",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\OutputObject\\WindowAllOuputInfo.xaml",
+              "RelativeToolTip": "DuongWPF\\OutputObject\\WindowAllOuputInfo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-20T06:23:51.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WindowLogin.xaml.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowLogin.xaml.cs",
+              "RelativeDocumentMoniker": "DuongWPF\\Login\\WindowLogin.xaml.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowLogin.xaml.cs",
+              "RelativeToolTip": "DuongWPF\\Login\\WindowLogin.xaml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwC8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:08:48.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WindowLogin.xaml",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowLogin.xaml",
+              "RelativeDocumentMoniker": "DuongWPF\\Login\\WindowLogin.xaml",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\Login\\WindowLogin.xaml",
+              "RelativeToolTip": "DuongWPF\\Login\\WindowLogin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-20T06:08:46.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WindowAddOuputPopup.xaml.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\OutputObject\\WindowAddOuputPopup.xaml.cs",
+              "RelativeDocumentMoniker": "DuongWPF\\OutputObject\\WindowAddOuputPopup.xaml.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\OutputObject\\WindowAddOuputPopup.xaml.cs",
+              "RelativeToolTip": "DuongWPF\\OutputObject\\WindowAddOuputPopup.xaml.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:05:09.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WindowAddOuputPopup.xaml",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\OutputObject\\WindowAddOuputPopup.xaml",
+              "RelativeDocumentMoniker": "DuongWPF\\OutputObject\\WindowAddOuputPopup.xaml",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\OutputObject\\WindowAddOuputPopup.xaml",
+              "RelativeToolTip": "DuongWPF\\OutputObject\\WindowAddOuputPopup.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-20T06:05:02.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "WindowAdmin.xaml",
               "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\WindowAdmin.xaml",
               "RelativeDocumentMoniker": "DuongWPF\\WindowAdmin.xaml",
               "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\WindowAdmin.xaml",
               "RelativeToolTip": "DuongWPF\\WindowAdmin.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-15T07:29:37.627Z",
+              "WhenOpened": "2024-07-20T06:00:46.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
+              "Title": "WindowAdmin.xaml.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\WindowAdmin.xaml.cs",
+              "RelativeDocumentMoniker": "DuongWPF\\WindowAdmin.xaml.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\WindowAdmin.xaml.cs",
+              "RelativeToolTip": "DuongWPF\\WindowAdmin.xaml.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAuwHsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T05:49:04.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ObjectPhone.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\BusinessObjects\\ObjectPhone.cs",
+              "RelativeDocumentMoniker": "BusinessObjects\\ObjectPhone.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\BusinessObjects\\ObjectPhone.cs",
+              "RelativeToolTip": "BusinessObjects\\ObjectPhone.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAqwDkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T04:16:14.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ObjectDao.cs",
+              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DataAccess\\DAL\\ObjectDao.cs",
+              "RelativeDocumentMoniker": "DataAccess\\DAL\\ObjectDao.cs",
+              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DataAccess\\DAL\\ObjectDao.cs",
+              "RelativeToolTip": "DataAccess\\DAL\\ObjectDao.cs",
+              "ViewState": "AQIAAPEAAAAAAAAAAAAswBYBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T04:16:12.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "DuongWPF\\MainWindow.xaml.cs",
               "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "DuongWPF\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAMwGMAAAAQAAAA",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAkwGYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T07:28:21.507Z",
+              "WhenOpened": "2024-07-20T04:04:40.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 18,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "DuongWPF\\MainWindow.xaml",
               "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\MainWindow.xaml",
               "RelativeToolTip": "DuongWPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-15T07:26:53.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WindowAddInputPopup.xaml.cs",
-              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowAddInputPopup.xaml.cs",
-              "RelativeDocumentMoniker": "DuongWPF\\InputInfo\\WindowAddInputPopup.xaml.cs",
-              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowAddInputPopup.xaml.cs",
-              "RelativeToolTip": "DuongWPF\\InputInfo\\WindowAddInputPopup.xaml.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAowG0AAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T07:07:15.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WindowAdd.xaml.cs",
-              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowAdd.xaml.cs",
-              "RelativeDocumentMoniker": "DuongWPF\\InputInfo\\WindowAdd.xaml.cs",
-              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowAdd.xaml.cs",
-              "RelativeToolTip": "DuongWPF\\InputInfo\\WindowAdd.xaml.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAcwDAAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T07:04:37.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WindowAdd.xaml",
-              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowAdd.xaml",
-              "RelativeDocumentMoniker": "DuongWPF\\InputInfo\\WindowAdd.xaml",
-              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowAdd.xaml",
-              "RelativeToolTip": "DuongWPF\\InputInfo\\WindowAdd.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-15T07:04:26.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WindowAddNewObj.xaml.cs",
-              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowAddNewObj.xaml.cs",
-              "RelativeDocumentMoniker": "DuongWPF\\InputInfo\\WindowAddNewObj.xaml.cs",
-              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowAddNewObj.xaml.cs",
-              "RelativeToolTip": "DuongWPF\\InputInfo\\WindowAddNewObj.xaml.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAmwJMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T06:56:38.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "WindowAddNewObj.xaml",
-              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowAddNewObj.xaml",
-              "RelativeDocumentMoniker": "DuongWPF\\InputInfo\\WindowAddNewObj.xaml",
-              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowAddNewObj.xaml",
-              "RelativeToolTip": "DuongWPF\\InputInfo\\WindowAddNewObj.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-15T06:56:36.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WindowAddPhonePopupxaml.xaml.cs",
-              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\ObjectP\\WindowAddPhonePopupxaml.xaml.cs",
-              "RelativeDocumentMoniker": "DuongWPF\\ObjectP\\WindowAddPhonePopupxaml.xaml.cs",
-              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\ObjectP\\WindowAddPhonePopupxaml.xaml.cs",
-              "RelativeToolTip": "DuongWPF\\ObjectP\\WindowAddPhonePopupxaml.xaml.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAMwB8AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T06:47:56.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WindowInput.xaml.cs",
-              "DocumentMoniker": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowInput.xaml.cs",
-              "RelativeDocumentMoniker": "DuongWPF\\InputInfo\\WindowInput.xaml.cs",
-              "ToolTip": "D:\\Master_plan\\C#\\Project\\HoangNguyenHaiDuong_SE1805_ProjectPhone\\DuongWPF\\InputInfo\\WindowInput.xaml.cs",
-              "RelativeToolTip": "DuongWPF\\InputInfo\\WindowInput.xaml.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAewCQAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T06:16:44.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T04:04:39.297Z"
             }
           ]
         }

@@ -30,18 +30,13 @@
                 <!-- Input Fields -->
                 <StackPanel Orientation="Vertical" Margin="10" Grid.Row="1">
                     <StackPanel Orientation="Horizontal" Margin="5">
-                        <Label Content="ID Phiếu:" Width="150" Foreground="#34495E" VerticalAlignment="Center"/>
-                        <TextBox x:Name="txtIdInput" Width="200" Background="#ECF0F1" Foreground="#34495E" BorderBrush="#34495E"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="5">
-                        <Label Content="ID vật tư:" Width="150" Foreground="#34495E" VerticalAlignment="Center"/>
-                        <TextBox x:Name="txtIdObject" Width="200" Background="#ECF0F1" Foreground="#34495E" BorderBrush="#34495E"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="5">
                         <Label Content="Tên vật tư:" Width="150" Foreground="#34495E" VerticalAlignment="Center"/>
                         <TextBox x:Name="txtObjectName" Width="200" Background="#ECF0F1" Foreground="#34495E" BorderBrush="#34495E"/>
                     </StackPanel>
-
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Label Content="Dung lượng:" Width="150" Foreground="#34495E" VerticalAlignment="Center"/>
+                        <TextBox x:Name="txtCapacity" Width="200" Background="#ECF0F1" Foreground="#34495E" BorderBrush="#34495E"/>
+                    </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="5">
                         <Label Content="Số lượng:" Width="150" Foreground="#34495E" VerticalAlignment="Center"/>
                         <TextBox x:Name="txtCount" Width="200" Background="#ECF0F1" Foreground="#34495E" BorderBrush="#34495E"/>
@@ -50,11 +45,6 @@
                     <StackPanel Orientation="Horizontal" Margin="5">
                         <Label Content="Giá nhập:" Width="150" Foreground="#34495E" VerticalAlignment="Center"/>
                         <TextBox x:Name="txtInputPrice" Width="200" Background="#ECF0F1" Foreground="#34495E" BorderBrush="#34495E"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal" Margin="5">
-                        <Label Content="Giá xuất:" Width="150" Foreground="#34495E" VerticalAlignment="Center"/>
-                        <TextBox x:Name="txtOutputPrice" Width="200" Background="#ECF0F1" Foreground="#34495E" BorderBrush="#34495E"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Margin="5">

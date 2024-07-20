@@ -131,7 +131,6 @@ namespace DuongWPF.Suplier
 								worksheet.Cell(row, 3).Value = item.Address;
 								worksheet.Cell(row, 4).Value = item.Phone;
 								worksheet.Cell(row, 5).Value = item.Email;
-								worksheet.Cell(row, 6).Value = item.MoreInfo;
 								worksheet.Cell(row, 7).Value = item.Status;
 
 								row++;

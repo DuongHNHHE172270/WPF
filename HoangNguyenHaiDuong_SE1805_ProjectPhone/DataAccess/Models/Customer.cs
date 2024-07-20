@@ -15,5 +15,11 @@ public partial class Customer
 
     public string? Email { get; set; }
 
+    public string? Password { get; set; }
+
+    public string? Status { get; set; }
+
+    public virtual ICollection<BillHistory> BillHistories { get; set; } = new List<BillHistory>();
+
     public virtual ICollection<OutputInfo> OutputInfos { get; set; } = new List<OutputInfo>();
 }

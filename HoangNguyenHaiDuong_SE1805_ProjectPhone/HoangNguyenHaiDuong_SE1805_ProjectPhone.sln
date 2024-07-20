@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DuongWPF", "DuongWPF\DuongW
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLayer", "BusinessLayer", "{1D39112F-8B77-460B-BB05-8A678B99B919}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{2C722CF1-8E7D-4C47-9327-0AB1280B8822}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{2C722CF1-8E7D-4C47-9327-0AB1280B8822}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{F31EF99C-0908-4F23-889B-6AF2CE66E22D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLayer", "DataLayer", "{A97EBBD7-96CA-43F9-A2A6-5A12C666677C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{EC18A0C1-65FD-4608-B2C3-47BE19FB1D51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{EC18A0C1-65FD-4608-B2C3-47BE19FB1D51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

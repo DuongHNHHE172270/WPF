@@ -31,7 +31,7 @@
                     <Button Content="Tìm kiếm" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnSearch" Click="btnSearch_Click"/>
                     <Button Content="Tải lại" Width="100" Height="25" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnLoad" Click="btnLoad_Click"/>
                     <Button Content="Thêm mới" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnAdd" Click="btnAdd_Click"/>
-                    <Button Content="Xuất file excel" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnFile" Click="btnFile_Click"/>
+                    <Button Content="Thông tin chi tiết" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnFile" Click="btnDetail_Click"/>
                     <Button Content="Trở lại" Margin="5" Width="100" Background="#E74C3C" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnReturn" Click="btnReturn_Click"/>
                 </StackPanel>
 

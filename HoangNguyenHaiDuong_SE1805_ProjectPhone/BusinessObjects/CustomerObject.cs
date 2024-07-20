@@ -58,5 +58,21 @@ namespace BusinessObjects
 		{
 			return customerDao.ExistsByPhoneInclude(phone, currentCustomerId);
 		}	
+
+		public Customer GetCusById (int id) => customerDao.GetOutputById(id);
+
+		public Customer GetCustomerByEmail (string email) => customerDao.GetCustByEmail(email);
+
+		public void ChangePassword(string email, string newPassword)
+		{
+			var customer = customerDao.GetCustByEmail(email);
+			if (customer != null)
+			{
+				customer.Password = BCrypt.Net.BCrypt.HashPassword(newPassword);
+				customerDao.Update(customer);
+			}
+
+					
+		}
 	}
 }

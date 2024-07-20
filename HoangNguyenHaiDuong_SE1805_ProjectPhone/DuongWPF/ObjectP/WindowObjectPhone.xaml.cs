@@ -84,9 +84,18 @@ namespace DuongWPF.NewFolder
 		{
 			if (dgObject.SelectedItem is DataAccess.Models.Object obj)
 			{
-				WindowUpdateObPhone windowUpdatePopup = new WindowUpdateObPhone(obj);
-				windowUpdatePopup.Owner = this;
-				windowUpdatePopup.ShowDialog();
+				try
+				{
+					obj.Status = obj.Status == "1" ? "0" : "1";
+					objectPhone.UpdateObj(obj);
+					MessageBox.Show("Cập nhật trạng thái thành công!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+					Load();
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show($"Lỗi khi cập nhật trạng thái: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+				}
+
 			}
 
 		}
@@ -112,64 +121,11 @@ namespace DuongWPF.NewFolder
 				MessageBox.Show("Vui lòng chọn vật tư cần xóa.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 			}
 		}
-
-		private void btnFile_Click(object sender, RoutedEventArgs e)
+		private void btnDetail_Click(object sender, RoutedEventArgs e)
 		{
-			ExportDataGridToExcel();
-		}
-
-		private void ExportDataGridToExcel()
-		{
-			try
-			{
-				var saveFileDialog = new Microsoft.Win32.SaveFileDialog
-				{
-					Filter = "Excel files (*.xlsx)|*.xlsx",
-					FilterIndex = 2,
-					RestoreDirectory = true
-				};
-
-				if (saveFileDialog.ShowDialog() == true)
-				{
-					using (var workbook = new XLWorkbook())
-					{
-						var worksheet = workbook.Worksheets.Add("Object Phone Info");
-
-						// Add custom header row
-						worksheet.Cell(1, 1).Value = "Tất cả vật tư điện thoại";
-						worksheet.Range("A1:F1").Merge().Style.Font.SetBold().Font.FontSize = 16;
-
-						// Adding headers from DataGrid
-						for (int i = 0; i < dgObject.Columns.Count; i++)
-						{
-							worksheet.Cell(2, i + 1).Value = dgObject.Columns[i].Header.ToString();
-						}
-
-						// Adding the rows
-						var itemsSource = dgObject.ItemsSource as IEnumerable<dynamic>;
-						if (itemsSource != null)
-						{
-							int row = 3; // Start after the header row
-							foreach (var item in itemsSource)
-							{
-								for (int col = 0; col < dgObject.Columns.Count; col++)
-								{
-									var cellValue = item.GetType().GetProperty(dgObject.Columns[col].SortMemberPath)?.GetValue(item, null);
-									worksheet.Cell(row, col + 1).Value = cellValue ?? string.Empty;
-								}
-								row++;
-							}
-						}
-
-						workbook.SaveAs(saveFileDialog.FileName);
-					}
-					MessageBox.Show("Xuất file Excel thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-				}
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show($"Có lỗi xảy ra khi xuất file Excel: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
-			}
+			WindowPhoneDetail windowPhoneDetail = new WindowPhoneDetail();
+			 windowPhoneDetail.Show();
+			this.Close();
 		}
 	}
 }

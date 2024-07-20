@@ -5,7 +5,7 @@ namespace DataAccess.Models;
 
 public partial class Object
 {
-    public string Id { get; set; } = null!;
+    public int Id { get; set; }
 
     public string? DisplayName { get; set; }
 
@@ -16,6 +16,8 @@ public partial class Object
     public virtual Suplier IdSuplierNavigation { get; set; } = null!;
 
     public virtual ICollection<InputInfo> InputInfos { get; set; } = new List<InputInfo>();
+
+    public virtual ICollection<ObjectDetail> ObjectDetails { get; set; } = new List<ObjectDetail>();
 
     public virtual ICollection<OutputInfo> OutputInfos { get; set; } = new List<OutputInfo>();
 }

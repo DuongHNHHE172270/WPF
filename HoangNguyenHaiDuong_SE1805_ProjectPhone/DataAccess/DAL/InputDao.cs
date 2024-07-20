@@ -1,4 +1,5 @@
 ﻿using DataAccess.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,30 +10,26 @@ namespace DataAccess.DAL
 	{
 		public List<InputInfoViewModel> GetAll()
 		{
-			try
+			using (var context = new QuanLyKhoDienThoaiContext())
 			{
-				using var context = new QuanLyKhoDienThoaiContext();
-				var inputInfos = context.InputInfos
-				.Select(ii => new InputInfoViewModel
-				{
-					Id = ii.Id,
-					ObjectName = ii.IdObjectNavigation.DisplayName,
-					InputId = ii.IdInput,
-					Count = ii.Count,
-					InputPrice = ii.InputPrice,
-					OutputPrice = ii.OutputPrice,
-					UserName = ii.IdUserNavigation.DisplayName,
-					DateInput = ii.IdInputNavigation.DateInput,
-					SuplierName = ii.IdObjectNavigation.IdSuplierNavigation.DisplayName
-				})
-				.ToList();
-				return inputInfos;
-			}
-			catch (Exception ex)
-			{
-				throw new Exception(ex.Message);
+				return context.InputInfos
+							  .Include(i => i.IdObjectNavigation)
+							  .ThenInclude(o => o.IdSuplierNavigation)
+							  .Include(i => i.IdObjectNavigation.ObjectDetails) 
+							  .Select(i => new InputInfoViewModel
+							  {
+								  Id = i.Id,
+								  ObjectName = i.IdObjectNavigation.DisplayName,
+								  Capacity = i.Capacity,
+								  Count = i.Count,
+								  InputPrice = i.InputPrice,
+								  UserName = context.Users.FirstOrDefault(u => u.Id == i.IdUser).DisplayName,
+								  SuplierName = i.IdObjectNavigation.IdSuplierNavigation.DisplayName,
+								  DateInput = context.Inputs.FirstOrDefault(inp => inp.Id == i.IdInput).DateInput
+							  }).ToList();
 			}
 		}
+
 
 		public void AddInput(InputInfo inputInfo)
 		{
@@ -47,32 +44,5 @@ namespace DataAccess.DAL
 				throw new Exception(ex.Message);
 			}
 		}
-
-		public bool IsIdInputExists(string idInput)
-		{
-			try
-			{
-				using var context = new QuanLyKhoDienThoaiContext();
-				return context.InputInfos.Any(ii => ii.IdInput == idInput);
-			}
-			catch (Exception ex)
-			{
-				throw new Exception(ex.Message);
-			}
-		}
-
-		public bool IsIdObjectExists(string idObject)
-		{
-			try
-			{
-				using var context = new QuanLyKhoDienThoaiContext();
-				return context.InputInfos.Any(ii => ii.IdObject == idObject);
-			}
-			catch (Exception ex)
-			{
-				throw new Exception(ex.Message);
-			}
-		}
-
 	}
 }

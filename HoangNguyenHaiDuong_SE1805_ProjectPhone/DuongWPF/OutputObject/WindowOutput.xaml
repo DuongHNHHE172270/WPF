@@ -31,19 +31,30 @@
                     <Button Content="Tìm kiếm" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnSearch" Click="btnSearch_Click"/>
                     <Button Content="Tải lại" Width="100" Height="25" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnLoad" Click="btnLoad_Click"/>
                     <Button Content="Thêm mới" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnAdd" Click="btnAdd_Click"/>
-                    <Button Content="Xuất file excel" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnFile" Click="btnFile_Click"/>
+                    <Button Content="Tất cả phiếu" Margin="5" Width="100" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnFile" Click="allP_Click"/>
                     <Button Content="Trở lại" Margin="5" Width="100" Background="#E74C3C" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" x:Name="btnReturn" Click="btnReturn_Click"/>
                 </StackPanel>
 
                 <!-- DataGrid -->
-                <DataGrid Name="dgInputInfo" Grid.Row="1" Margin="10" AutoGenerateColumns="False" Background="Transparent" CanUserAddRows="False" ItemsSource="{Binding}">
+                <DataGrid Name="dgOuputInfo" Grid.Row="1" Margin="10" AutoGenerateColumns="False" Background="Transparent" CanUserAddRows="False" ItemsSource="{Binding}">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="ID" Binding="{Binding IdOutputInfo}" IsReadOnly="True" Width="0.5*" />
                         <DataGridTextColumn Header="Tên vật tư" Binding="{Binding ObjectName}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn Header="Dung lượng" Binding="{Binding Capacity}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Số lượng" Binding="{Binding Count}" IsReadOnly="True" Width="*" />
                         <DataGridTextColumn Header="Người nhận" Binding="{Binding CusName}" IsReadOnly="True" Width="*" />
-                        <DataGridTextColumn Header="Người xuất kho" Binding="{Binding UName}" IsReadOnly="True" Width="*" />
-                        <DataGridTextColumn Header="Ngày xuất" Binding="{Binding DateOutput}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn Header="Ngày gửi" Binding="{Binding DateOutput}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" IsReadOnly="True" Width="*" />
+                        <DataGridTemplateColumn Header="Hành động" Width="1.5*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                                        <Button Content="Chấp nhận" Margin="5,0" Width="80" Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" Click="Accept_Click"/>
+                                        <Button Content="Hủy" Margin="5,0" Width="80" Background="#E74C3C" Foreground="White" FontWeight="Bold" BorderBrush="Transparent" Click="Cancel_Click"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>

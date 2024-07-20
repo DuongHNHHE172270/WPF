@@ -2,6 +2,7 @@
 using DataAccess.Models;
 using DocumentFormat.OpenXml.Office2010.Excel;
 using DocumentFormat.OpenXml.Wordprocessing;
+using DuongWPF.NewFolder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,11 +26,13 @@ namespace DuongWPF.InputInfo
 	{
 		private readonly InputObject _inputObject;
 		private readonly ObjectPhone objectPhone;
+		private readonly LoginObject loginObject;
 		public WindowAddNewObj()
 		{
 			InitializeComponent();
 			_inputObject = new InputObject();
 			objectPhone = new ObjectPhone();
+			loginObject = new LoginObject();
 			LoadSupliers();
 		}
 
@@ -48,11 +51,8 @@ namespace DuongWPF.InputInfo
 
 		void ResetForm()
 		{
-			txtIdInput.Text = null;
-			txtIdObject.Text = null;
 			txtCount.Text = null;
 			txtObjectName.Text = null;
-			txtOutputPrice.Text = null;
 			txtInputPrice.Text = null;
 			cbSuplier.SelectedIndex = -1;
 		}
@@ -61,96 +61,104 @@ namespace DuongWPF.InputInfo
 		{
 			try
 			{
-				var idInput = txtIdInput.Text;
-				var idObject = txtIdObject.Text.Trim();
-				var objectName = txtObjectName.Text;
-				var countText = txtCount.Text;
-				var inputPriceText = txtInputPrice.Text;
-				var outputPriceText = txtOutputPrice.Text;
+				var name = txtObjectName.Text;
+				var countText = int.Parse(txtCount.Text);
+				var inputPriceText = double.Parse( txtInputPrice.Text);
 				var suplierId = (int?)cbSuplier.SelectedValue;
+				var capacity = txtCapacity.Text;
 
-				if (string.IsNullOrWhiteSpace(idInput) || string.IsNullOrWhiteSpace(idObject) ||
-					string.IsNullOrWhiteSpace(objectName) || string.IsNullOrWhiteSpace(countText) ||
-					string.IsNullOrWhiteSpace(inputPriceText) || string.IsNullOrWhiteSpace(outputPriceText) ||
-					suplierId == null)
+				if (string.IsNullOrWhiteSpace(name) || countText == 0 ||
+					inputPriceText == 0 || suplierId == null)
 				{
 					MessageBox.Show("Vui lòng điền đầy đủ thông tin!");
 					ResetForm();
 					return;
 				}
 
-				if (_inputObject.IsIdInputExists(idInput))
-				{
-					MessageBox.Show("ID Phiếu đã tồn tại!");
-					ResetForm();
-					return;
-				}
-				var existingObject = objectPhone.GetAllObject().FirstOrDefault(o => o.Id == idObject);
-				if (existingObject != null)
-				{
-					MessageBox.Show("Id vật tư đã tồn tại. Vui lòng chọn Id khác.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-					return;
-				}
+				var exitsObject = objectPhone.GetAllObject().
+								  FirstOrDefault(o => o.DisplayName.ToLower() == name.ToLower() && o.IdSuplierNavigation.Id == suplierId);
 
-				var existingObjectWithNameAndSupplier = objectPhone.GetAllObject().FirstOrDefault(o => o.DisplayName.ToLower() == objectName.ToLower() && o.IdSuplier == suplierId);
-				if (existingObjectWithNameAndSupplier != null)
-				{
-					MessageBox.Show("Vật tư với tên và nhà cung cấp đã tồn tại. Vui lòng kiểm tra lại.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-					return;
-				}
-				if (!int.TryParse(countText, out int count) || count <= 0)
-				{
-					MessageBox.Show("Số lượng phải là số lớn hơn 0!");
-					ResetForm();
-					return;
-				}
+			
+				if (exitsObject != null) {
 
-				if (!double.TryParse(inputPriceText, out double inputPrice) || inputPrice <= 0)
-				{
-					MessageBox.Show("Giá nhập phải là số lớn hơn 0!");
-					ResetForm();
-					return;
-				}
-
-				if (!double.TryParse(outputPriceText, out double outputPrice) || outputPrice <= 0)
-				{
-					MessageBox.Show("Giá xuất phải là số lớn hơn 0!");
-					ResetForm();
-					return;
-				}
-				var inputInfo = new DataAccess.Models.InputInfo
-				{
-					Id = txtIdInput.Text,
-					IdObject = idObject,
-					IdInput = idInput,
-					Count = int.Parse(txtCount.Text),
-					InputPrice = double.Parse(txtInputPrice.Text),
-					OutputPrice = double.Parse(txtOutputPrice.Text),
-					IdUser = LoginObject.accountUser.Id,
-					IdInputNavigation = new Input
+					var existingDetail = exitsObject.ObjectDetails.FirstOrDefault(od => od.Capacity.ToLower() == capacity.ToLower());
+					if (existingDetail != null) 
 					{
-						Id = txtIdInput.Text,
-						DateInput = DateTime.Now
-					},
-					IdObjectNavigation = new DataAccess.Models.Object
-					{
-						Id = txtIdObject.Text,
-						IdSuplier = (int)cbSuplier.SelectedValue,
-						Status = "1",
-						DisplayName = txtObjectName.Text,
+						existingDetail.Count += countText;
+						objectPhone.UpdateObject(exitsObject);
+						AddNewInput(exitsObject.Id, countText, inputPriceText, capacity);
+						
+						Close();
 					}
-				};
+					else
+					{
+						ObjectDetail objectDetail = new ObjectDetail
+						{
+							IdObject = exitsObject.Id,
+							Capacity = capacity,
+							Count = countText,
+						};
+						exitsObject.ObjectDetails.Add(objectDetail);
+						objectPhone.UpdateObject(exitsObject);
 
-				_inputObject.AddInput(inputInfo);
+						AddNewInput(exitsObject.Id, countText, inputPriceText, capacity);
+						
+						Close();
+					}					
+				}
+				else
+				{
+					DataAccess.Models.Object newObject = new DataAccess.Models.Object
+					{
+						DisplayName = name,
+						IdSuplier = suplierId.Value,
+						Status = "1",
+						ObjectDetails = new List<ObjectDetail>
+						{
+							new ObjectDetail
+							{
+								Capacity = capacity,
+								Count = countText,
+							}
+						},
+					};
 
-				MessageBox.Show("Đã thêm phiếu nhập thành công!");
-				this.Close();
+					objectPhone.AddObject(newObject);
 
+					AddNewInput(newObject.Id, countText, inputPriceText, capacity);
+				}
+
+				MessageBox.Show("Thêm phiếu thành công!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+				Close();
+
+				if (Owner is WindowInput parentWindow)
+				{
+					parentWindow.Load();
+				}
 			}
 			catch (Exception ex)
 			{
 				MessageBox.Show("Lỗi khi thêm phiếu nhập: " + ex.Message);
 			}
+		}
+
+		private void AddNewInput(int objectId, int count, double price, string capacity)
+		{
+			InputObject inputObject = new InputObject();
+			var inputInfo1 = new DataAccess.Models.InputInfo
+			{
+				IdObject = objectId,
+				Count = count,
+				InputPrice = price,
+				IdUser = loginObject.GetUser().Id,
+				Capacity = capacity,
+				IdInputNavigation = new Input
+				{
+					DateInput = DateTime.Now
+				},
+			};
+			
+			inputObject.AddInput(inputInfo1);
 		}
 
 		private void btnCancel_Click(object sender, RoutedEventArgs e)

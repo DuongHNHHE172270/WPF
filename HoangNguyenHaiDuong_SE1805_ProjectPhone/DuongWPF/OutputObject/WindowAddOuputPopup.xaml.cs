@@ -34,11 +34,20 @@ namespace DuongWPF.OutputObject
 			customerObject = new CustomerObject();
 			objectPhone = new ObjectPhone();
 			Loaded += WindowAddOuputPopup_Loaded;
+			cbObject.SelectionChanged += CbObject_SelectionChanged;
+		}
+
+		private void CbObject_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+			if(cbObject.SelectedValue != null)
+			{
+				int objId = (int)cbObject.SelectedValue;
+				LoadCapacity(objId);
+			}
 		}
 
 		private void WindowAddOuputPopup_Loaded(object sender, RoutedEventArgs e)
 		{
-			LoadCustomers();
 			LoadObject();
 		}
 
@@ -49,49 +58,45 @@ namespace DuongWPF.OutputObject
 			cbObject.DisplayMemberPath = "DisplayName";
 			cbObject.SelectedValuePath = "Id";
 		}
-		 void LoadCustomers()
+
+		void LoadCapacity(int id)
 		{
-			var customers = customerObject.GetCustomers();
-			cbCustomer.ItemsSource = customers;
-			cbCustomer.DisplayMemberPath = "DisplayName";
-			cbCustomer.SelectedValuePath ="Id";
+			cbCapa.ItemsSource = objectPhone.GetOrderDetaiById(id);
+
+			cbCapa.DisplayMemberPath = "Capacity";
+			cbCapa.SelectedValuePath = "Id";
 		}
 	
 		private void btnAdd_Click(object sender, RoutedEventArgs e)
 		{
 			try
 			{
-				var idCustomer = cbCustomer.SelectedValue.ToString();
-				if (string.IsNullOrEmpty(txtIdInput.Text) ||
-					cbObject.SelectedValue == null ||
-					string.IsNullOrEmpty(txtCount.Text) ||
-					cbCustomer.SelectedValue == null)
+				int capId = (int)cbCapa.SelectedValue;
+				if (cbObject.SelectedValue == null ||
+					string.IsNullOrEmpty(txtCount.Text))
 				{
 					MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
 					return;
 				}
 
-				if (outObject.IsOutputIdExists(txtIdInput.Text))
-				{
-					MessageBox.Show("ID Phiếu đã tồn tại!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
-					return;
-				}
+				var selectedCapacityItem = (ObjectDetail)cbCapa.SelectedItem;
+				string capacity = selectedCapacityItem.Capacity;
+
 				var output = new OutputInfo
 				{
-					IdOutputInfo = txtIdInput.Text,
-					IdObject = cbObject.SelectedValue.ToString(),
+					IdObject = (int)cbObject.SelectedValue,
 					Count = int.Parse(txtCount.Text),
-					IdCustomer = int.Parse(idCustomer),
-					IdUser = LoginObject.accountUser.Id,
-					IdNavigation = new Output
+					IdCustomer = loginObject.GetCustomer().Id,
+					IdUser = null,
+					Capacity = capacity,
+					IdOutputNavigation = new Output
 					{
-						Id = txtIdInput.Text,
 						DateOutput = DateTime.Now
 					},
 				};
 
-				outObject.AddOutput(output);
-				MessageBox.Show("Thêm phiếu xuất thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+				outObject.AddOutput(output, capacity);
+				MessageBox.Show("Yêu cầu nhận vật tư thành công! Hãy chờ được xử lý", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
 				this.Close();
 
 

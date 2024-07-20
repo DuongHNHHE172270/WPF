@@ -5,19 +5,21 @@ namespace DataAccess.Models;
 
 public partial class InputInfo
 {
-    public string Id { get; set; } = null!;
+    public int Id { get; set; }
 
-    public string IdObject { get; set; } = null!;
+    public int IdObject { get; set; }
 
-    public string IdInput { get; set; } = null!;
+    public int IdInput { get; set; }
 
-    public int? Count { get; set; }
+    public int Count { get; set; }
 
     public double? InputPrice { get; set; }
 
-    public double? OutputPrice { get; set; }
-
     public int IdUser { get; set; }
+
+    public string? Status { get; set; }
+
+    public string Capacity { get; set; } = null!;
 
     public virtual Input IdInputNavigation { get; set; } = null!;
 

@@ -1,4 +1,6 @@
 ﻿using BusinessObjects;
+using DuongWPF.Customer;
+using DuongWPF.OutputObject;
 using System;
 using System.Windows;
 using System.Windows.Input;
@@ -28,6 +30,7 @@ namespace DuongWPF.Login
 				try
 				{
 					bool isAuthor = loginObject.Login(username, password);
+					bool isCus = loginObject.LoginCustomer(username, password);
 
 					if (isAuthor)
 					{
@@ -43,6 +46,12 @@ namespace DuongWPF.Login
 							mainWindow.Show();
 							this.Close();
 						}
+					}
+					else if (isCus)
+					{
+						WindowHomeCustomer windowHomeCustomer = new WindowHomeCustomer();
+						windowHomeCustomer.Show();
+						this.Close();
 					}
 					else
 					{

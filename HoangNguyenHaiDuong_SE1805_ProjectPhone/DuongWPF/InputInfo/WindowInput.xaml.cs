@@ -36,8 +36,8 @@ namespace DuongWPF.InputInfo
 
         public void Load()
         {
-            dgInputInfo.ItemsSource = inputObject.GetAll();
-        }
+			dgInputInfo.ItemsSource = inputObject.GetAll();
+		}
 
 		private void btnSearch_Click(object sender, RoutedEventArgs e)
 		{
@@ -61,9 +61,9 @@ namespace DuongWPF.InputInfo
 
 		private void btnAdd_Click(object sender, RoutedEventArgs e)
 		{
-			WindowAdd windowAdd = new WindowAdd();
-			windowAdd.Owner = this;
-			windowAdd.ShowDialog();
+			WindowAddNewObj windowAddNewObj = new WindowAddNewObj();
+			windowAddNewObj.Owner = this;
+			windowAddNewObj.ShowDialog();
 		}
 
 		private void btnReturn_Click(object sender, RoutedEventArgs e)

@@ -36,7 +36,6 @@ namespace DuongWPF.Suplier
 			txtAddress.Text = null;
 			txtPhone.Text = null;
 			txtEmail.Text = null;
-			txtMoreInfo.Text = null;
 		}
 
 		private void btnAdd_Click(object sender, RoutedEventArgs e)
@@ -47,9 +46,9 @@ namespace DuongWPF.Suplier
 				String address = txtAddress.Text;
 				String phone = txtPhone.Text;
 				String email = txtEmail.Text;
-				String info = txtMoreInfo.Text;
 
-				if(String.IsNullOrWhiteSpace(name) || String.IsNullOrWhiteSpace(address) || String.IsNullOrWhiteSpace(phone) || String.IsNullOrWhiteSpace(email) || String.IsNullOrWhiteSpace(info))
+				if(String.IsNullOrWhiteSpace(name) || String.IsNullOrWhiteSpace(address) || String.IsNullOrWhiteSpace(phone) || 
+					String.IsNullOrWhiteSpace(email))
 				{
 					MessageBox.Show("Hãy nhập hết thông tin!", "Error", MessageBoxButton.OK);
 					ResetForm();
@@ -98,8 +97,7 @@ namespace DuongWPF.Suplier
 					Address = address,
 					Phone = phone,
 					Email = email,
-					MoreInfo = info,
-					Status = rbActive.IsChecked == true ? "1" : "0",
+					Status = "1",
 				};
 				
 				suplierObject.AddSuplier(suplier);

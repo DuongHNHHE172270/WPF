@@ -65,20 +65,27 @@ namespace DuongWPF.Customer
 
 		private void btnUpdate_Click(object sender, RoutedEventArgs e)
 		{
-			if(dgCustomer.SelectedItem is DataAccess.Models.Customer customer)
-			{
-				WindowCusUpdatePopup windowCusUpdatePopup = new WindowCusUpdatePopup(customer);
-				windowCusUpdatePopup.Owner = this;
-				windowCusUpdatePopup.ShowDialog();
-			}
-		}
-
-		private void btnDelete_Click(object sender, RoutedEventArgs e)
-		{
 			if (dgCustomer.SelectedItem is DataAccess.Models.Customer customer)
 			{
-				customerObject.DeleteCustomer(customer);
-				Load();
+				try
+				{
+
+					customer.Status = customer.Status == "1" ? "0" : "1";
+
+					customerObject.UpdateCustomer(customer);
+
+					Load();
+
+					MessageBox.Show("Cập nhật trạng thái thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+				}
+			}
+			else
+			{
+				MessageBox.Show("Vui lòng chọn khách hàng để cập nhật trạng thái.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
 			}
 		}
 

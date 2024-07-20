@@ -1,5 +1,7 @@
 ﻿using BusinessObjects;
 using ClosedXML.Excel;
+using DataAccess.Models;
+using DocumentFormat.OpenXml.Wordprocessing;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,10 +24,16 @@ namespace DuongWPF.OutputObject
 	public partial class WindowOutput : Window
 	{
 		private readonly OutObject outObject;
+		private readonly CustomerObject customerObject;
+		private readonly LoginObject loginObject;
+		private readonly ObjectPhone objectPhone;
 		public WindowOutput()
 		{
 			InitializeComponent();
 			outObject = new OutObject();
+			customerObject = new CustomerObject();
+			loginObject = new LoginObject();
+			objectPhone = new ObjectPhone();
 			LoadOutputInfos();
 		}
 
@@ -34,7 +42,7 @@ namespace DuongWPF.OutputObject
 			try
 			{
 				var outputList = outObject.GetAllOutputs();
-				dgInputInfo.ItemsSource = outputList;
+				dgOuputInfo.ItemsSource = outputList;
 			}
 			catch (Exception ex)
 			{
@@ -49,7 +57,7 @@ namespace DuongWPF.OutputObject
 			try
 			{
 				var outputList = outObject.GetAllOutputs().Where(o => o.ObjectName.ToLower().Contains(searchTerm.ToLower())).ToList();
-				dgInputInfo.ItemsSource = outputList;
+				dgOuputInfo.ItemsSource = outputList;
 			}
 			catch (Exception ex)
 			{
@@ -77,64 +85,94 @@ namespace DuongWPF.OutputObject
 			this.Close();
 		}
 
-		private void btnFile_Click(object sender, RoutedEventArgs e)
-		{
-			ExportDataGridToExcel();
-		}
-
-		private void ExportDataGridToExcel()
+		private int outId;
+		private void Accept_Click(object sender, RoutedEventArgs e)
 		{
 			try
 			{
-				var saveFileDialog = new Microsoft.Win32.SaveFileDialog
+				if (dgOuputInfo.SelectedItem is OutputInfoViewModel outputInfoViewModel)
 				{
-					Filter = "Excel files (*.xlsx)|*.xlsx",
-					FilterIndex = 2,
-					RestoreDirectory = true
-				};
+					outId = outputInfoViewModel.IdOutputInfo;
+					var outputInfo1 = outObject.GetById(outId);
 
-				if (saveFileDialog.ShowDialog() == true)
-				{
-					using (var workbook = new XLWorkbook())
+					if (outputInfo1 != null)
 					{
-						var worksheet = workbook.Worksheets.Add("Output Info");
+						outputInfo1.Status = "accept";
+						outputInfo1.IdUser = loginObject.GetUser().Id;
 
-						// Add custom header row
-						worksheet.Cell(1, 1).Value = "Tất cả phiếu xuất kho";
-						worksheet.Range("A1:H1").Merge().Style.Font.SetBold().Font.FontSize = 16; // Example: Merge cells A1 to H1, set bold font and font size
 
-						// Adding headers from DataGrid
-						for (int i = 0; i < dgInputInfo.Columns.Count; i++)
+						outObject.UpdateOutInfo(outputInfo1);
+					
+
+						DataAccess.Models.Customer customer = customerObject.GetCusById(outputInfo1.IdCustomer);
+						DataAccess.Models.Object obj = objectPhone.GetObjById(outputInfo1.IdObject);
+
+						var exitsObjectDetail = objectPhone.GetAllObjDetail()
+													.FirstOrDefault(o => o.Capacity.ToLower() == outputInfo1.Capacity.ToLower() && o.IdObject == outputInfo1.IdObject);
+
+						if (exitsObjectDetail != null)
 						{
-							worksheet.Cell(2, i + 1).Value = dgInputInfo.Columns[i].Header.ToString();
-						}
+							exitsObjectDetail.Count -= (int)outputInfo1.Count;
 
-						// Adding the rows
-						var itemsSource = dgInputInfo.ItemsSource as IEnumerable<dynamic>;
-						if (itemsSource != null)
+							objectPhone.UpdateObjDetail(exitsObjectDetail);
+						}
+						BillHistory bill = new BillHistory()
 						{
-							int row = 3; // Start after the header row
-							foreach (var item in itemsSource)
-							{
-								for (int col = 0; col < dgInputInfo.Columns.Count; col++)
-								{
-									var cellValue = item.GetType().GetProperty(dgInputInfo.Columns[col].SortMemberPath)?.GetValue(item, null);
-									worksheet.Cell(row, col + 1).Value = cellValue ?? string.Empty;
-								}
-								row++;
-							}
-						}
+							IdOutputInfo = outputInfo1.Id,
+							IdCustomer = customer.Id,
+							NameCustomer = customer.DisplayName,
+							Email = customer.Email,
+							Phone = customer.Phone,
+							ObjectName = obj.DisplayName,
+							Capacity = outputInfo1.Capacity,
+							Quantity = (int)outputInfo1.Count,
+							DateBill = DateTime.Now,
+						};
 
-						workbook.SaveAs(saveFileDialog.FileName);
+						outObject.AddBill(bill);
+						MessageBox.Show("Thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+						LoadOutputInfos();
 					}
-					MessageBox.Show("Xuất file Excel thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
 				}
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show($"Có lỗi xảy ra khi xuất file Excel: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+				MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 			}
 		}
 
+		private void Cancel_Click(object sender, RoutedEventArgs e)
+		{
+			try
+			{
+				if (dgOuputInfo.SelectedItem is OutputInfoViewModel outputInfoViewModel)
+				{
+					outId = outputInfoViewModel.IdOutputInfo;
+					var outputInfo1 = outObject.GetById(outId);
+
+					if (outputInfo1 != null)
+					{
+						outputInfo1.Status = "cancel";
+						outputInfo1.IdUser = loginObject.GetUser().Id;
+						outObject.UpdateOutInfo(outputInfo1);
+					}
+					MessageBox.Show("Thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+					LoadOutputInfos();
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+			}
+
+
+		}
+
+		private void allP_Click(object sender, RoutedEventArgs e)
+		{
+			WindowAllOuputInfo windowAllOuputInfo = new WindowAllOuputInfo();
+			windowAllOuputInfo.Show();
+			this.Close();
+		}
 	}
 }

@@ -39,10 +39,18 @@ namespace DuongWPF
 
 		private void UpdateTotalCounts()
 		{
-			string id = cbObject.SelectedValue as string;
-			txtLuongNhap.Text = objectPhone1.GetTotalInputInfoCount(id).ToString();
-			txtLuongXuat.Text = objectPhone1.GetTotalOutputInfoCount(id).ToString();
-			txtTonKho.Text = objectPhone1.GetTotalInventory(id).ToString();
+			if (cbObject.SelectedValue != null && int.TryParse(cbObject.SelectedValue.ToString(), out int id))
+			{
+				txtLuongNhap.Text = objectPhone1.GetTotalInputInfoCount(id).ToString();
+				txtLuongXuat.Text = objectPhone1.GetTotalOutputInfoCount(id).ToString();
+				txtTonKho.Text = objectPhone1.GetTotalInventory(id).ToString();
+			}
+			else
+			{
+				txtLuongNhap.Text = objectPhone1.GetTotalInputInfoCount(-1).ToString();
+				txtLuongXuat.Text = objectPhone1.GetTotalOutputInfoCount(-1).ToString();
+				txtTonKho.Text = objectPhone1.GetTotalInventory(-1).ToString();
+			}
 		}
 
 		private void Input_Click(object sender, RoutedEventArgs e)

@@ -14,16 +14,12 @@ namespace BusinessObjects
 			inputDao = new InputDao();
 		}
 
+		public List<InputInfoViewModel> GetAll() => inputDao.GetAll();
+
 		public void AddInput(InputInfo inputInfo)
 		{
 			inputDao.AddInput(inputInfo);
 		}
-
-		public List<InputInfoViewModel> GetAll() => inputDao.GetAll();
-
-		public bool IsIdInputExists(string idInput) => inputDao.IsIdInputExists(idInput);
-
-		public bool IsIdObjectExists(string idObject) => inputDao.IsIdObjectExists(idObject);
 
 	}
 }
